@@ -15,10 +15,19 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #4d4d4d;
+  color: #131313;
   background: #fff;
 }
 
+.site-icon {
+  /* Spécifiez le chemin de l'icône */
+  background-image: url('images/oj3_100');
+  /* Spécifiez la taille de l'icône */
+  width: 32px; /* Largeur */
+  height: 32px; /* Hauteur */
+  /* Assurez-vous que l'icône soit visible */
+  display: block;
+}
 #page {
   position: relative;
   overflow-x: hidden;
@@ -42,7 +51,7 @@ body {
   bottom: 0;
   left: 0;
   z-index: 101;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.993);
   content: "";
 }
 
@@ -100,7 +109,7 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgb(46, 8, 135);
+  background: rgba(31, 1, 102, 0.681);
 }
 #fh5co-header .display-t,
 .fh5co-cover .display-t {
@@ -222,7 +231,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-features {
-  background: rgb(46, 8, 135);
+  background: rgb(41, 4, 126);
 }
 #fh5co-features h2 {
   color: #fff;
@@ -589,7 +598,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 20px;
   font-size: 16px;
   font-weight: normal;
-  color: #bfbfbf;
+  color: rgb(46, 8, 135)c;
 }
 
 .timeline-body > p,
@@ -686,11 +695,19 @@ h1, h2, h3, h4, h5, h6, figure {
 .progress-bar.progress-bar-6 {
   background-color: #920f0f !important;
 }
+.progress-bar.progress-bar-7 {
+  background-color: #1a0101 !important;
+}
+.progress-bar.progress-bar-8 {
+  background-color: #d48301 !important;
+}
 
 .chart {
   width: 160px;
   height: 160px;
-  margin: 0 auto 40px auto;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
   position: relative;
   text-align: center;
   
@@ -705,12 +722,14 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .chart span strong {
   display: block;
-  color: rgb(46, 8, 135);
+  color: rgb(0, 0, 0);
 }
 .chart canvas {
   position: absolute;
   left: 0;
   top: 0;
+  max-width: 100%; /* Pour s'assurer que la largeur du canvas ne dépasse pas celle de son parent */
+
 }
 
 .work {
@@ -722,6 +741,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
   display: table;
   overflow: hidden;
+  border-radius: 10px; /* Arrondir les bords */
 }
 @media screen and (max-width: 768px) {
   .work {
@@ -742,6 +762,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  border-radius: 10px; /* Arrondir les bords */
 }
 .work .desc h3 {
   font-size: 20px;
@@ -752,17 +773,19 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .work .desc span {
   display: block;
-  color: #999999;
-  font-size: 14px;
+  color: rgb(0, 0, 0);
+  font-size: 18x;
+  font-weight: bold; /* Changer le poids de la police */
+  font-style: regular; /* Changer le style de la police */
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
-  -webkit-transform: translate3d(0, 15px, 0);
+  -webkit-transform: translate3d(0, 16px, 0);
   transform: translate3d(0, 15px, 0);
 }
 @media screen and (max-width: 768px) {
   .work .desc {
     opacity: 1;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(127, 125, 243, 0.411);
   }
   .work .desc h3 {
     -webkit-transform: translate3d(0, 0, 0);
