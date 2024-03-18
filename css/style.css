@@ -663,25 +663,28 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .progress-bar {
-  background-color: #2F3C4F;
+  background-color: #3d6fbbb4;
   height: 5px;
   display: block;
   box-shadow: none;
 }
 .progress-bar.progress-bar-1 {
-  background-color: #2980b9 !important;
+  background-color: #1f84c7c0 !important;
 }
-.progress-bar.  progress-bar-2 {
-  background-color: #c0392b !important;
+.progress-bar.progress-bar-2 {
+  background-color: #04599e !important;
 }
 .progress-bar.progress-bar-3 {
-  background-color: #194e92 !important;
+  background-color: #d49816 !important;
 }
 .progress-bar.progress-bar-4 {
-  background-color: #8e44ad !important;
+  background-color: #c01967 !important;
 }
 .progress-bar.progress-bar-5 {
-  background-color: #27ae60 !important;
+  background-color: #5f18bd !important;
+}
+.progress-bar.progress-bar-6 {
+  background-color: #920f0f !important;
 }
 
 .chart {
@@ -690,6 +693,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0 auto 40px auto;
   position: relative;
   text-align: center;
+  
 }
 .chart span {
   position: absolute;
@@ -697,9 +701,11 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 0;
   margin-top: -30px;
   width: 100%;
+  
 }
 .chart span strong {
   display: block;
+  color: rgb(46, 8, 135);
 }
 .chart canvas {
   position: absolute;
